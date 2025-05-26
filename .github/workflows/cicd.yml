@@ -27,7 +27,7 @@ jobs:
     - name: ZIP Release
       uses: vimtor/action-zip@v1
       with:
-        files: build/swanstation_libretro.dll
+        files: build\swanstation_libretro.dll build\src\libretro\swanstation_libretro.lib dep\libretro-common\include\libretro.h
         dest: swanstation_libretro.zip
 
     - name: Create Draft Release
